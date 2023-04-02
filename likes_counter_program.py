@@ -13,3 +13,15 @@ blog_posts = [{'Photos': 3, 'Likes': 21, 'Comments': 2},
               {'Comments': 4, 'Shares': 2}, 
               {'Photos': 8, 'Comments': 1, 'Shares': 1}, 
               {'Photos': 3, 'Likes': 19, 'Comments': 3}]
+
+total_likes = 0
+
+try:
+    for post in blog_posts:
+        if 'Likes' not in post.keys():
+            post['Likes'] = 0
+        total_likes += post['Likes']
+except:
+    pass
+
+print(total_likes)
