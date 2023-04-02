@@ -26,3 +26,4 @@ except:
 
 
 print(total_likes)
+print(2)
